@@ -106,8 +106,23 @@ select::-ms-expand {
  }
  
  select {
+    font-size: 20px;
    -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;
+ }
+ option{
+    font-size: 15px;
+ }
+ button{
+    margin-left: 1rem;
+    margin-bottom: 5px;
+ }
+ i{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0.7rem;
+    color:#183153;
+    
  }
  

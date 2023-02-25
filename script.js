@@ -64,6 +64,16 @@ document.body.appendChild(dias);
 
 
   document.getElementById("imprimir").addEventListener("click", function() {
-    print()
+    var printOptions = {
+      // Ativar gráficos de segundo plano
+      printBackground: true,
+      // Configurar a orientação da página como paisagem
+      landscape: true,
+      // Definir o tamanho do papel como A4
+      paperSize: { width: '210mm', height: '297mm', margin: '0mm' }
+    };
+    
+    // Abrir a janela de impressão com as configurações pré-definidas
+    window.print(printOptions);
   });
  

@@ -5,7 +5,7 @@ const btnAdd=document.getElementById("adicionar");
 // const Mes = select.options[select.selectedIndex].text;
 //  console.log(Mes);
 let Mes;
-const select = document.getElementById("opções");
+const select = document.getElementById("acrescentar");
 select.addEventListener("change", function() {
   Mes = select.options[select.selectedIndex].text;
   console.log(Mes)

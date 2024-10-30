@@ -1,371 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;300;400;700&family=Varela+Round&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
-    <title>Plantão Funcionários</title>
-  </head>
-  <style media="print">
-    #imprimir, #adicionar,#acrescentar{
-      display: none;
-    }
-  body {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-    print-color-adjust: exact;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;300;400;700&family=Varela+Round&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+  <title>Plantão Funcionários</title>
+</head>
+<style media="print">
+  #imprimir,
+  #adicionar,
+  #opções {
+    display: none;
   }
-  </style>
-  <body>
-    <header>
-      <!-- <img src="./logo.png" width="200px" alt="" srcset=""> -->
-      <h2>Z&C</h2>
-      <h1>Plantão Do Fim de semana</h1>
-    </header>
-    <div class="container">
-      <div class="quadrados">
-        <div class="dias">
-          <!-- <h3>Sábado</h3> -->
-           <select class="">
-          <option value="Sábado">Sábado</option>
-          <option value="Domingo">Domingo</option>
-          <option value="Segunda">Segunda</option>
-          <option value="Terça">Terça</option>
-          <option value="Quarta">Quarta</option>
-          <option value="Quinta">Quinta</option>
-          <option value="Sexta">Sexta</option>
-        </select>
-          <input type="date" name="" id="">
-          <div class="quadrado">
-            <select name="" class="nomes">
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
+</style>
+
+<body>
+  <header>
+    <img src="./logo.png" width="200px" alt="" srcset="">
+    <h1>Plantão Do Fim de semana</h1>
+  </header>
+  <div class="container">
+    <div class="quadrados">
+      <div class="dias">
+        <h3>Sábado</h3>
+        <input type="date" name="" id="">
+        <div class="quadrado">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">EDIMARA</option>
+            <option value="">ADRIANE</option>
+            <option value="">IRÍS</option>
+            <option value="">EMILI</option>
+          </select>
         </div>
-        <div class="dias">
-          <!-- <h3>Domingo</h3> -->
-          <select   class="">
-            <option value="Sábado">Domingo</option>
-          <option value="Domingo">Sábado</option>
-          <option value="Segunda">Segunda</option>
-          <option value="Terça">Terça</option>
-          <option value="Quarta">Quarta</option>
-          <option value="Quinta">Quinta</option>
-          <option value="Sexta">Sexta</option>
-          <input type="date" name="" id="">
-          <div class="quadrado">
-            <select name="" class="nomes" >
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
+      </div>
+      <div class="dias">
+        <h3>Domingo</h3><input type="date" name="" id="">
+        <div class="quadrado">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">EDIMARA</option>
+            <option value="">ADRIANE</option>
+            <option value="">IRÍS</option>
+            <option value="">EMILI</option>
+          </select>
         </div>
-        <div class="dias">
-          <!-- <h3>Domingo</h3> -->
-          <select   class="">
-            <option value="Sábado">Sábado</option>
-            <option value="Domingo">Domingo</option>
-            <option value="Segunda">Segunda</option>
-            <option value="Terça">Terça</option>
-            <option value="Quarta">Quarta</option>
-            <option value="Quinta">Quinta</option>
-            <option value="Sexta">Sexta</option>
-          <input type="date" name="" id="">
-          <div class="quadrado"  class="">
-            <select name="" class="nomes" >
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
+      </div>
+      <div class="dias">
+        <h3>Segunda</h3><input type="date" name="" id="">
+        <div class="quadrado">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">EDIMARA</option>
+            <option value="">ADRIANE</option>
+            <option value="">IRÍS</option>
+            <option value="">EMILI</option>
+          </select>
+
         </div>
-        <div class="dias">
-          <!-- <h3>Domingo</h3> -->
-          <select   class="">
-            <option value="Domingo">Domingo</option>
-            <option value="Sábado">Sábado</option>
-          <option value="Segunda">Segunda</option>
-          <option value="Terça">Terça</option>
-          <option value="Quarta">Quarta</option>
-          <option value="Quinta">Quinta</option>
-          <option value="Sexta">Sexta</option>
-          <input type="date" name="" id="">
-          <div class="quadrado">
-            <select name="" >
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
+      </div>
+      <div class="dias">
+        <h3>Sábado</h3><input type="date" name="" id="">
+        <div class="quadrado">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">EDIMARA</option>
+            <option value="">ADRIANE</option>
+            <option value="">IRÍS</option>
+            <option value="">EMILI</option>
+          </select>
         </div>
-        <div class="dias">
-          <!-- <h3>Domingo</h3> -->
-          <select   class="">
-            <option value="Sábado">Sábado</option>
-          <option value="Domingo">Domingo</option>
-          <option value="Segunda">Segunda</option>
-          <option value="Terça">Terça</option>
-          <option value="Quarta">Quarta</option>
-          <option value="Quinta">Quinta</option>
-          <option value="Sexta">Sexta</option>
-          <input type="date" name="" id="">
-          <div class="quadrado">
-            <select name="" class="nomes" >
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
+      </div>
+      <div class="dias">
+        <h3>Domingo</h3><input type="date" name="" id="">
+        <div class="quadrado">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">EDIMARA</option>
+            <option value="">ADRIANE</option>
+            <option value="">IRÍS</option>
+            <option value="">EMILI</option>
+          </select>
         </div>
-        <div class="dias">
-          <!-- <h3>Domingo</h3> -->
-          <select   class="">
-            <option value="Domingo">Domingo</option>
-            <option value="Sábado">Sábado</option>
-          <option value="Segunda">Segunda</option>
-          <option value="Terça">Terça</option>
-          <option value="Quarta">Quarta</option>
-          <option value="Quinta">Quinta</option>
-          <option value="Sexta">Sexta</option>
-          <input type="date" name="" id="">
-          <div class="quadrado">
-            <select name="" class="nomes" >
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
+      </div>
+      <div class="dias">
+        <h3>Sábado</h3><input type="date" name="" id="">
+        <div class="quadrado">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">EDIMARA</option>
+            <option value="">ADRIANE</option>
+            <option value="">IRÍS</option>
+            <option value="">EMILI</option>
+          </select>
         </div>
-        <div class="dias">
-          <!-- <h3>Domingo</h3> -->
-          <select   class="">
-            <option value="Sábado">Sábado</option>
-          <option value="Domingo">Domingo</option>
-          <option value="Segunda">Segunda</option>
-          <option value="Terça">Terça</option>
-          <option value="Quarta">Quarta</option>
-          <option value="Quinta">Quinta</option>
-          <option value="Sexta">Sexta</option>
-          <input type="date" name="" id="">
-          <div class="quadrado">
-            <select name="" class="nomes" >
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
+      </div>
+      <div class="dias">
+        <h3>Domingo</h3><input type="date" name="" id="">
+        <div class="quadrado">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">EDIMARA</option>
+            <option value="">ADRIANE</option>
+            <option value="">IRÍS</option>
+            <option value="">EMILI</option>
+          </select>
         </div>
-        <div class="dias">
-          <!-- <h3>Domingo</h3> -->
-          <select  class="">
-            <option value="Domingo">Domingo</option>
-            <option value="Sábado">Sábado</option>
-          <option value="Segunda">Segunda</option>
-          <option value="Terça">Terça</option>
-          <option value="Quarta">Quarta</option>
-          <option value="Quinta">Quinta</option>
-          <option value="Sexta">Sexta</option>
-          <input type="date" name="" id="">
-          <div class="quadrado">
-            <select name="" class="nomes" >
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
+      </div>
+      <div class="dias">
+        <h3>Sábado</h3><input type="date" name="" id="">
+        <div class="quadrado">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">EDIMARA</option>
+            <option value="">ADRIANE</option>
+            <option value="">IRÍS</option>
+            <option value="">EMILI</option>
+          </select>
         </div>
-        <div class="dias">
-          <!-- <h3>Domingo</h3> -->
-          <select   class="">
-            <option value="Sábado">Sábado</option>
-          <option value="Domingo">Domingo</option>
-          <option value="Segunda">Segunda</option>
-          <option value="Terça">Terça</option>
-          <option value="Quarta">Quarta</option>
-          <option value="Quinta">Quinta</option>
-          <option value="Sexta">Sexta</option>
-          <input type="date" name="" id="">
-          <div class="quadrado">
-            <select name=""  class="nomes">
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
+      </div>
+      <div class="dias">
+        <h3>Domingo</h3><input type="date" name="" id="">
+        <div class="quadrado">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">EDIMARA</option>
+            <option value="">ADRIANE</option>
+            <option value="">IRÍS</option>
+            <option value="">EMILI</option>
+          </select>
         </div>
-        <div class="dias">
-          <!-- <h3>Domingo</h3> -->
-          <select   class="">
-            <option value="Domingo">Domingo</option>
-            <option value="Sábado">Sábado</option>
-            <option value="Segunda">Segunda</option>
-            <option value="Terça">Terça</option>
-            <option value="Quarta">Quarta</option>
-            <option value="Quinta">Quinta</option>
-            <option value="Sexta">Sexta</option>
-          <input type="date" name="" id="">
-          <div class="quadrado">
-            <select name="" class="nomes" >
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
+      </div>
+      <div class="dias">
+        <h3>Sábado</h3><input type="date" name="" id="">
+        <div class="quadrado">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">EDIMARA</option>
+            <option value="">ADRIANE</option>
+            <option value="">IRÍS</option>
+            <option value="">EMILI</option>
+          </select>
         </div>
-        <div class="dias">
-          <!-- <h3>Domingo</h3> -->
-          <select   class="">
-            <option value="Sábado">Sábado</option>
-            <option value="Domingo">Domingo</option>
-            <option value="Segunda">Segunda</option>
-            <option value="Terça">Terça</option>
-            <option value="Quarta">Quarta</option>
-            <option value="Quinta">Quinta</option>
-            <option value="Sexta">Sexta</option>
-          <input type="date" name="" id="">
-          <div class="quadrado">
-            <select name=""  class="nomes">
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
+      </div>
+      <div class="dias">
+        <h3>Domingo</h3><input type="date" name="" id="">
+        <div class="quadrado">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">EDIMARA</option>
+            <option value="">ADRIANE</option>
+            <option value="">IRÍS</option>
+            <option value="">EMILI</option>
+          </select>
         </div>
-        <div class="dias">
-          <!-- <h3>Domingo</h3> -->
-          <select   class="">
-            <option value="Domingo">Domingo</option>
-            <option value="Sábado">Sábado</option>
-            <option value="Segunda">Segunda</option>
-            <option value="Terça">Terça</option>
-            <option value="Quarta">Quarta</option>
-            <option value="Quinta">Quinta</option>
-            <option value="Sexta">Sexta</option>
-          <input type="date" name="" id="">
-          <div class="quadrado">
-            <select name=""  class="nomes">
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
+      </div>
+      <div class="dias">
+        <h3>Sábado</h3><input type="date" name="" id="">
+        <div class="quadrado">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">EDIMARA</option>
+            <option value="">ADRIANE</option>
+            <option value="">IRÍS</option>
+            <option value="">EMILI</option>
+          </select>
+
         </div>
-        <div class="dias">
-          <!-- <h3>Domingo</h3> -->
-          <select  class="">
-            <option value="Sábado">Sábado</option>
-            <option value="Domingo">Domingo</option>
-            <option value="Segunda">Segunda</option>
-            <option value="Terça">Terça</option>
-            <option value="Quarta">Quarta</option>
-            <option value="Quinta">Quinta</option>
-            <option value="Sexta">Sexta</option>
-          <input type="date" name="" id="">
-          <div class="quadrado">
-            <select name=""  class="nomes">
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
+      </div>
+      <div class="dias">
+        <h3>Domingo</h3><input type="date" name="" id="">
+        <div class="quadrado">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">EDIMARA</option>
+            <option value="">ADRIANE</option>
+            <option value="">IRÍS</option>
+            <option value="">EMILI</option>
+          </select>
+
         </div>
-        <div class="dias">
-          <!-- <h3>Domingo</h3> -->
-          <select   class="">
-            <option value="Domingo">Domingo</option>
-            <option value="Sábado">Sábado</option>
-            <option value="Segunda">Segunda</option>
-            <option value="Terça">Terça</option>
-            <option value="Quarta">Quarta</option>
-            <option value="Quinta">Quinta</option>
-            <option value="Sexta">Sexta</option>
-          <input type="date" name="" id="">
-          <div class="quadrado">
-            <select name=""  class="nomes">
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
+      </div>
+      <div class="dias">
+        <h3>Sábado</h3><input type="date" name="" id="">
+        <div class="quadrado">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">EDIMARA</option>
+            <option value="">ADRIANE</option>
+            <option value="">IRÍS</option>
+            <option value="">EMILI</option>
+          </select>
+
         </div>
-        <div class="dias">
-          <!-- <h3>Domingo</h3> -->
-          <select class="">
-            <option value="Sábado">Sábado</option>
-            <option value="Domingo">Domingo</option>
-            <option value="Segunda">Segunda</option>
-            <option value="Terça">Terça</option>
-            <option value="Quarta">Quarta</option>
-            <option value="Quinta">Quinta</option>
-            <option value="Sexta">Sexta</option>
-          <input type="date" name="" id="">
-          <div class="quadrado">
-            <select name=""  class="nomes">
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
+      </div>
+      <div class="dias">
+        <h3>Domingo</h3><input type="date" name="" id="">
+        <div class="quadrado">
+          <select name="" id="">
+            <option value=""></option>
+            <option value="">EDIMARA</option>
+            <option value="">ADRIANE</option>
+            <option value="">IRÍS</option>
+            <option value="">EMILI</option>
+          </select>
         </div>
-        <div class="dias">
-          <!-- <h3>Domingo</h3> -->
-          <select class="">
-            <option value="Domingo">Domingo</option>
-            <option value="Sábado">Sábado</option>
-            <option value="Segunda">Segunda</option>
-            <option value="Terça">Terça</option>
-            <option value="Quarta">Quarta</option>
-            <option value="Quinta">Quinta</option>
-            <option value="Sexta">Sexta</option>
-          <input type="date" name="" id="">
-          <div class="quadrado">
-            <select name="" class="nomes">
-              <option value=""></option>
-              <option value="">EDIMARA</option>
-              <option value="">ADRIANE</option>
-              <option value="">IRÍS</option>
-            </select>
-          </div>
-        </div>
-        <h3>Em caso de trocas, avisar até quarta-feira, grato!</h3>
-        <abbr title="Imprir ou Gerar Pdf"><button id="imprimir"><i class="fa-sharp fa-solid fa-print"></i></button></abbr>
-        <select id="acrescentar">
-          <option value="Sábado">Sábado</option>
-          <option value="Domingo">Domingo</option>
-          <option value="Segunda">Segunda</option>
-            <option value="Terça">Terça</option>
-            <option value="Quarta">Quarta</option>
-            <option value="Quinta">Quinta</option>
-            <option value="Sexta">Sexta</option>
-        </select>
-        <abbr title="Adicionar mais dias"><button id="adicionar"><i class="fa-sharp fa-solid fa-plus"></i></button></abbr>
+      </div>
+      <h3>Em caso de trocas, avisar até quarta-feira, grato!</h3>
+      <button id="imprimir"><i class="fa-sharp fa-solid fa-print"></i></button>
+      <select id="opções">
+        <option value="Sábado">Sábado</option>
+        <option value="Domingo">Domingo</option>
+      </select>
+      <button id="adicionar"><i class="fa-sharp fa-solid fa-plus"></i></button>
     </div>
-    
     <script src="script.js"></script>
-  </body>
-  
+</body>
+
 </html>

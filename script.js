@@ -55,7 +55,7 @@ function criarFuncionário() {
 
   var option4 = document.createElement("option");
   option4.value = "";
-  option4.innerText = "IRÍS";
+  option4.innerText = "BRUNA";
   select.appendChild(option4);
 
   document.body.appendChild(dias);
